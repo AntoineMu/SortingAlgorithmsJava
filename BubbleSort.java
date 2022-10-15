@@ -23,7 +23,7 @@ public class BubbleSort{
         display.init();
         int outerLoop = 0;
         int innerLoop = 0;
-        //loop(display, arr, outerLoop, innerLoop);
+        loop(display, arr, outerLoop, innerLoop);
 
         long startTime = System.nanoTime();
         bubbleSort(arr);
