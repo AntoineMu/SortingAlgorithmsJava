@@ -7,7 +7,7 @@ public class InsertionSort {
 
     public static void main(String[] args){
 
-        List<Integer> arr = initArrayList.init(500);
+        List<Integer> arr = initArrayList.init(500, 50);
 
         long startTime = System.nanoTime();
         insertionSort(arr);
@@ -22,7 +22,7 @@ public class InsertionSort {
         }
         if(!sorted){
             System.out.println("ARRAY NOT SORTED!!!!");
-        }else System.out.println("Array Sorted: ");
+        }else System.out.println("Insertion Sorted: ");
         System.out.println("Execution time in nanoseconds: " + totalTime);
         System.out.println("Execution time in milliseconds: " + (double)totalTime / 1000000);
         System.out.println("Execution time in seconds: " + (double)totalTime / 1000000000);

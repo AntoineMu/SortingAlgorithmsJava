@@ -7,14 +7,14 @@ public class MergeSort {
 
     public static void main(String[] args){
 
-        List<Integer> arr = initArrayList.init(500);
+        List<Integer> arr = initArrayList.init(500, 50);
 
         long startTime = System.nanoTime();
         arr = mergeSort(arr);
         long stopTime = System.nanoTime();
         long totalTime = stopTime - startTime;
 
-        System.out.println("Array Sorted: ");
+        System.out.println("Merge Sorted: ");
         System.out.println("Execution time in nanoseconds: " + totalTime);
         System.out.println("Execution time in milliseconds: " + (double)totalTime / 1000000);
         System.out.println("Execution time in seconds: " + (double)totalTime / 1000000000);
